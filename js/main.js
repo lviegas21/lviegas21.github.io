@@ -34,6 +34,16 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
+// Garantindo que o DOM está completamente carregado antes de observar os elementos
+document.addEventListener('DOMContentLoaded', () => {
+    // Observar seções para animações
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+    
+    // Garantir que os cards de projeto estão visíveis
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+    });
 });

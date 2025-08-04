@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas - Portfolio</title>
+    <meta name="description" content="Portfolio de Lucas Ferreira Viegas - Desenvolvedor Full Stack especializado em Flutter, Java, Firebase e Spring">
+    <meta name="keywords" content="desenvolvedor, full stack, flutter, java, firebase, spring, portfolio, mobile, web">
+    <meta name="author" content="Lucas Ferreira Viegas">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Lucas Ferreira Viegas - Portfolio">
+    <meta property="og:description" content="Desenvolvedor Full Stack especializado em Flutter, Java, Firebase e Spring">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lviegas21.github.io/">
+    <meta name="theme-color" content="#3498db">
+    <title>Lucas Ferreira Viegas - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -36,10 +48,39 @@
     <section id="about" class="about">
         <h2>Sobre Mim</h2>
         <div class="about-content">
-            <p>Sou um desenvolvedor apaixonado por criar soluções inovadoras e eficientes, 
-                com sólida experiência em tecnologias modernas, como Flutter, Java, Firebase e Spring.
-                 Estou sempre em busca de aprendizado contínuo, aplicando boas práticas de desenvolvimento para criar aplicações robustas,
-                escaláveis e orientadas à experiência do usuário. Minha motivação é transformar ideias em soluções práticas que gerem impacto positivo.</p>
+            <div class="about-text">
+                <p>Sou um desenvolvedor Full Stack apaixonado por criar soluções inovadoras e eficientes, com sólida experiência em tecnologias modernas como Flutter, Java, Firebase e Spring.</p>
+                
+                <p>Com mais de 5 anos de experiência no desenvolvimento de aplicações móveis e web, tenho me especializado em criar interfaces intuitivas e funcionais que proporcionam uma excelente experiência ao usuário.</p>
+                
+                <p>Estou sempre em busca de aprendizado contínuo, aplicando boas práticas de desenvolvimento para criar aplicações robustas, escaláveis e orientadas à experiência do usuário. Minha motivação é transformar ideias em soluções práticas que gerem impacto positivo.</p>
+            </div>
+            
+            <div class="about-details">
+                <div class="detail-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h4>Formação</h4>
+                        <p>Bacharel em Ciência da Computação</p>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <h4>Experiência</h4>
+                        <p>+5 anos em desenvolvimento de software</p>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <i class="fas fa-code"></i>
+                    <div>
+                        <h4>Especialidade</h4>
+                        <p>Desenvolvimento Mobile e Web</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -48,7 +89,94 @@
         <div class="project-grid">
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/monitoramento.jpeg" alt="Screenshot do MonitoramentoON">
+                    <!-- Usando uma imagem temporária até que a imagem real seja adicionada -->
+                   <div class="project-image">
+                    <img src="images/vistoria_web.png">
+                </div>
+                </div>
+                <div class="project-info">
+                    <h3>Checkpoint Admin</h3>
+                    <p class="project-description">Painel administrativo web para gerenciamento de vistorias criadas pelo app móvel. Oferece dashboard analítico, controle de usuários e geração de relatórios detalhados.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue 3</span>
+                        <span class="tech-tag">Vuetify</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">jsPDF</span>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>Dashboard analítico com métricas</li>
+                            <li>Gerenciamento completo de vistorias</li>
+                            <li>Formulários personalizáveis</li>
+                            <li>Controle de níveis de acesso</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/lviegas21/vistoria-web" class="btn" target="_blank"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Usando uma imagem temporária até que a imagem real seja adicionada -->
+                   <div class="project-image">
+                    <img src="images/vistoria_app.png">
+                </div>
+                </div>
+                <div class="project-info">
+                    <h3>Check-in - Aplicativo de Vistorias</h3>
+                    <p class="project-description">Aplicativo móvel para realização de vistorias internas em apartamentos, com captura de fotos, geração de relatórios PDF e sincronização com painel administrativo.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">GetX</span>
+                        <span class="tech-tag">Hive</span>
+                        <span class="tech-tag">Clean Architecture</span>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>Geração de relatórios em PDF</li>
+                            <li>Modo offline com sincronização</li>
+                            <li>Captura e armazenamento de fotos</li>
+                            <li>Exportação para Excel</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/lviegas21/check_in" class="btn" target="_blank"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/lista_tarefa.png">
+                </div>
+                <div class="project-info">
+                    <h3>WL Consulting - Desafio Flutter</h3>
+                    <p class="project-description">Aplicativo de gerenciamento de tarefas desenvolvido como parte de um desafio técnico, com recursos avançados como scroll infinito, persistência local e arquitetura limpa.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Bloc</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">GetIt</span>
+                        <span class="tech-tag">Clean Architecture</span>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>Listagem de tarefas com scroll infinito</li>
+                            <li>Persistência local com SQLite</li>
+                            <li>Gerenciamento de estado com Bloc</li>
+                            <li>Arquitetura limpa e testável</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/lviegas21/wl-consulting-challenger" class="btn" target="_blank"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/monitoramento.jpeg">
                 </div>
                 <div class="project-info">
                     <h3>MonitoramentoON</h3>
@@ -75,7 +203,7 @@
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/rickandmorty.jpeg" alt="Screenshot do Rick and Morty App">
+                    <img src="images/rickandmorty.jpeg" >
                 </div>
                 <div class="project-info">
                     <h3>Rick and Morty</h3>
@@ -128,6 +256,10 @@
         </div>
     </section>
 
+   
+
+   
+
     <section id="contact" class="contact">
         <h2>Contato</h2>
         <div class="contact-content">
@@ -137,7 +269,36 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Lucas. Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Lucas Ferreira Viegas</h3>
+                <p>Desenvolvedor Full Stack</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/lviegas21/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lucas-ferreira-viegas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><i class="fas fa-envelope"></i> lucas.viegas006@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lucas Ferreira Viegas. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
